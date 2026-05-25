@@ -7,7 +7,7 @@
 [![Orientation](https://img.shields.io/badge/Orientation-Horizontal%20%26%20Vertical-blueviolet.svg)](https://lecoauto.com/?lang=en)
 [![Theme Engine](https://img.shields.io/badge/Engine-Native%20Android%20XML-orange.svg)](https://lecoauto.com/?lang=en)
 
-[**🌐 Official Website**](https://lecoauto.com/?lang=en) | [**⚙️ Theme Dev Tool**](https://dev.lecoauto.com/) | [**📥 Download App**](https://lecoauto.com/?lang=en#download)
+[**🌐 Official Website**](https://lecoauto.com/?lang=en) | [**⚙️ Theme Dev Tool**](https://dev.lecoauto.com/?lang=en) | [**📥 Download App**](https://lecoauto.com/index/download?lang=en)
 
 ---
 
