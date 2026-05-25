@@ -1,0 +1,12 @@
+{
+  "name": "Demo",
+  "type": "theme",
+  "min_sdk": 1845,
+  "developer": "LecoAuto",
+  "version": 1,
+  "icon": "lecoauto",
+  "preview_image": "preview_image",
+  "status_bar": 0,
+  "minimum_width": 550,
+  "description": "LecoAuto Demo Theme"
+}

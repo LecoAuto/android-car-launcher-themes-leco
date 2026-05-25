@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lecoauto.widget2.view.LeCardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:card_background_color="?app_blur_card"
+    app:card_blur_enabled="true"
+    app:card_blur_radius="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.lecoauto.widget.lview.TimeView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="?te_white"
+            android:gravity="center_vertical"
+            android:id="@id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20.0dp"
+            android:layout_marginEnd="5.0dp"
+            app:time_format="@string/time_format_time" />
+        <com.lecoauto.widget.user.UserType
+            android:id="@id/vip_icon"
+            android:layout_width="60.0dp"
+            android:layout_height="20.0dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/time_view" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="?te_white"
+            android:gravity="center"
+            android:id="@id/user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="未登录账号"
+            android:layout_marginStart="5.0dp"
+            android:layout_toEndOf="@id/vip_icon" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/open_app_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10.0dp"
+            android:layout_toStartOf="@id/network_view" />
+        <com.lecoauto.widget.lview.NetworkView
+            android:id="@id/network_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20.0dp"
+            android:layout_alignParentEnd="true"
+            app:icon_color="?te_white" />
+    </RelativeLayout>
+</com.lecoauto.widget2.view.LeCardView>

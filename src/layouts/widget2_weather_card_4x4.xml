@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ripple="true"
+    app:ripple_color="@color/app_ripple"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@id/weather_icon"
+            android:layout_width="55.0dp"
+            android:layout_height="55.0dp"
+            android:importantForAccessibility="no" />
+        <com.lecoauto.widget.lview.FadingTextView
+            android:textSize="30.0sp"
+            android:textColor="?te_white"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@id/weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="55.0dp"
+            android:text="？°"
+            android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.lecoauto.widget.lview.ClockView
+            android:id="@id/clock_view"
+            android:layout_width="150.0dp"
+            android:layout_height="150.0dp" />
+        <com.lecoauto.widget.lview.TimeView
+            android:textSize="40.0sp"
+            android:textStyle="bold"
+            android:textColor="?te_white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dp"
+            android:letterSpacing="0.2"
+            app:time_format="@string/time_format_time" />
+    </LinearLayout>
+    <com.lecoauto.widget.lview.TimeView
+        android:textSize="25.0sp"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dp"
+        android:layout_above="@id/weather_city"
+        android:layout_marginStart="15.0dp"
+        android:layout_marginEnd="15.0dp"
+        app:time_format="@string/time_format_month_day_with_weekday" />
+    <com.lecoauto.widget.lview.FadingTextView
+        android:textSize="20.0sp"
+        android:textColor="?te_white"
+        android:gravity="end|center"
+        android:id="@id/weather_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dp"
+        android:text="定位中"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15.0dp" />
+    <com.lecoauto.widget.lview.FadingTextView
+        android:textSize="20.0sp"
+        android:textColor="?te_white"
+        android:gravity="end|center"
+        android:id="@id/weather_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dp"
+        android:text="晴"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15.0dp"
+        android:layout_alignParentEnd="true" />
+</com.ruffian.library.widget.RRelativeLayout>

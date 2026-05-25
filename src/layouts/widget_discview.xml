@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/music_cd"
+        android:layout_width="200.0dp"
+        android:layout_height="200.0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="120.0dp"
+        android:layout_alignStart="@id/music_back"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="lottie/music_cd.json"
+        app:lottie_imageAssetsFolder="lottie/images/"
+        app:lottie_loop="true" />
+    <com.lecoauto.widget.lview.music.MusicCover
+        android:id="@id/music_back"
+        android:background="?bg_card"
+        android:layout_width="220.0dp"
+        android:layout_height="220.0dp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:importantForAccessibility="no"
+        app:cover_radius="10.0dp" />
+</RelativeLayout>

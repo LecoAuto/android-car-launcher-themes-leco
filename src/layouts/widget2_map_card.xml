@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruffian.library.widget.RLinearLayout
+        android:orientation="vertical"
+        android:id="@id/amap"
+        android:layout_width="0.0dp"
+        android:layout_height="80.0dp"
+        android:layout_weight="1.0"
+        app:corner_radius="15.0dp"
+        app:ripple="true"
+        app:ripple_color="@color/app_ripple">
+        <ImageView
+            android:id="@id/amap_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="5.0"
+            android:importantForAccessibility="no" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="?te_white"
+            android:gravity="center"
+            android:id="@id/amap_text"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:text="@string/map_card_navig"
+            android:layout_weight="3.0" />
+    </com.ruffian.library.widget.RLinearLayout>
+    <com.ruffian.library.widget.RLinearLayout
+        android:orientation="vertical"
+        android:id="@id/work"
+        android:layout_width="0.0dp"
+        android:layout_height="80.0dp"
+        android:layout_weight="1.0"
+        app:corner_radius="15.0dp"
+        app:ripple="true"
+        app:ripple_color="@color/app_ripple">
+        <ImageView
+            android:id="@id/work_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="5.0"
+            android:importantForAccessibility="no" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="?te_white"
+            android:gravity="center"
+            android:id="@id/work_text"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:text="@string/map_card_work"
+            android:layout_weight="3.0" />
+    </com.ruffian.library.widget.RLinearLayout>
+    <com.ruffian.library.widget.RLinearLayout
+        android:orientation="vertical"
+        android:id="@id/home"
+        android:layout_width="0.0dp"
+        android:layout_height="80.0dp"
+        android:layout_weight="1.0"
+        app:corner_radius="15.0dp"
+        app:ripple="true"
+        app:ripple_color="@color/app_ripple">
+        <ImageView
+            android:id="@id/home_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="5.0"
+            android:importantForAccessibility="no" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="?te_white"
+            android:gravity="center"
+            android:id="@id/home_text"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:text="@string/map_card_home"
+            android:layout_weight="3.0" />
+    </com.ruffian.library.widget.RLinearLayout>
+</LinearLayout>

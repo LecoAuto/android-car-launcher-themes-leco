@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RRelativeLayout
+    android:orientation="vertical"
+    android:layout_width="48.0dp"
+    android:layout_height="48.0dp"
+    app:background_normal="@array/white_dots_back"
+    app:border_color_normal="#90a6ae"
+    app:border_width_normal="1.6599731dp"
+    app:corner_radius="24.0dp"
+    app:gradient_orientation="LEFT_RIGHT"
+    app:ripple="true"
+    app:ripple_color="#fefefe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

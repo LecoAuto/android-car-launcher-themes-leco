@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lecoauto.widget.visualizer.DiffusionRingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.lecoauto.widget.view.DiscView
+        android:id="@id/disc_view"
+        android:layout_width="0.0dp"
+        android:layout_height="0.0dp"
+        app:layout_constraintBottom_toTopOf="@id/lrc_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1.0" />
+    <com.lecoauto.widget.view.LrcView
+        android:textStyle="bold"
+        android:id="@id/lrc_view"
+        android:layout_width="0.0dp"
+        android:layout_height="0.0dp"
+        android:fontFamily="serif"
+        app:layout_constraintBottom_toTopOf="@id/music_bar_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/disc_view"
+        app:layout_constraintVertical_weight="1.0"
+        app:lrcAnimationDuration="888"
+        app:lrcCurrentTextColor="?te_white"
+        app:lrcDividerHeight="22.0dp"
+        app:lrcNormalTextColor="?su_white"
+        app:lrcNormalTextSize="18.0sp"
+        app:lrcPadding="10.0dp"
+        app:lrcTextGravity="center"
+        app:lrcTextSize="23.0sp" />
+    <com.ruffian.library.widget.RView
+        android:layout_gravity="bottom"
+        android:id="@id/music_bar_back"
+        android:layout_width="match_parent"
+        android:layout_height="80.0dp"
+        android:layout_margin="@dimen/card_spacing"
+        app:background_normal="?app_blur_card"
+        app:corner_radius="@dimen/card_radius"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <SeekBar
+        android:id="@id/music_bar"
+        android:visibility="gone"
+        android:layout_width="0.0dp"
+        android:layout_height="0.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toEndOf="@id/music_bar_back"
+        app:layout_constraintStart_toStartOf="@id/music_bar_back"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back" />
+    <com.lecoauto.widget.lview.LottieView
+        android:id="@id/music_progress"
+        android:layout_width="0.0dp"
+        android:layout_height="0.0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toEndOf="@id/music_bar_back"
+        app:layout_constraintStart_toStartOf="@id/music_bar_back"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_radius="@dimen/card_radius" />
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center_vertical"
+        android:id="@id/player_choice"
+        android:layout_width="60.0dp"
+        android:layout_height="60.0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10.0dp"
+        app:cardBackgroundColor="#00fefefe"
+        app:cardCornerRadius="15.0dp"
+        app:cardElevation="0.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintStart_toStartOf="@id/music_bar_back"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/player_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dp"
+        android:layout_marginStart="10.0dp"
+        android:layout_marginEnd="10.0dp"
+        app:layout_constraintEnd_toStartOf="@id/music_last"
+        app:layout_constraintStart_toEndOf="@id/player_choice"
+        app:layout_constraintTop_toTopOf="@id/player_choice">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="?te_white"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:id="@id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3.0dp"
+        android:layout_marginStart="10.0dp"
+        android:layout_marginEnd="10.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/player_choice"
+        app:layout_constraintEnd_toStartOf="@id/music_last"
+        app:layout_constraintStart_toEndOf="@id/player_choice">
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="?su_white"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:layout_gravity="bottom"
+            android:id="@id/music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+    <com.ruffian.library.widget.RLinearLayout
+        android:gravity="center"
+        android:id="@id/music_last"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15.0dp"
+        android:layout_toStartOf="@id/music_play"
+        app:background_pressed="@color/app_ripple2"
+        app:corner_radius="10.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toStartOf="@id/music_play"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back" />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@id/icon_last"
+        android:layout_width="17.0dp"
+        android:layout_height="17.0dp"
+        android:tint="?te_white"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/music_play"
+        app:layout_constraintEnd_toEndOf="@id/music_last"
+        app:layout_constraintStart_toStartOf="@id/music_last"
+        app:layout_constraintTop_toTopOf="@id/music_last" />
+    <com.ruffian.library.widget.RLinearLayout
+        android:gravity="center"
+        android:id="@id/music_play"
+        android:layout_width="60.0dp"
+        android:layout_height="60.0dp"
+        android:layout_marginEnd="15.0dp"
+        app:background_pressed="@color/app_ripple2"
+        app:corner_radius="10.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toStartOf="@id/music_next"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back" />
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@id/icon_play"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:tint="?te_white"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/music_play"
+        app:layout_constraintEnd_toEndOf="@id/music_play"
+        app:layout_constraintStart_toStartOf="@id/music_play"
+        app:layout_constraintTop_toTopOf="@id/music_play" />
+    <com.ruffian.library.widget.RLinearLayout
+        android:gravity="center"
+        android:id="@id/music_next"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="70.0dp"
+        android:layout_toEndOf="@id/music_play"
+        app:background_pressed="@color/app_ripple2"
+        app:corner_radius="10.0dp"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/music_bar_back" />
+    <ImageView
+        android:id="@id/icon_next"
+        android:layout_width="17.0dp"
+        android:layout_height="17.0dp"
+        android:tint="?te_white"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/music_next"
+        app:layout_constraintEnd_toEndOf="@id/music_next"
+        app:layout_constraintStart_toStartOf="@id/music_next"
+        app:layout_constraintTop_toTopOf="@id/music_next" />
+    <TextView
+        android:textSize="17.0sp"
+        android:textStyle="bold"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:id="@id/music_nows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dp"
+        android:text="00:00 / 00:00"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20.0dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="@id/music_bar_back"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

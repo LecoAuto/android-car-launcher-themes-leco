@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/page_radius"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.stx.xhb.androidx.XBanner
+        android:id="@id/wallpaper_banner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:AutoPlayTime="5000"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="true"
+        app:pageChangeDuration="1200"
+        app:pointsContainerBackground="#00fefefe"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="0.0sp" />
+    <com.lecoauto.widget.lview.EmptyControlVideo
+        android:id="@id/wallpaper_video"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.lecoauto.widget.view.StatusBar
+        android:id="@id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="34.0dp" />
+    <com.lecoauto.widget2.view.NavigBar
+        android:id="@id/navig_bar"
+        android:layout_width="70.0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:layout_below="@id/statusbar"
+        android:layout_marginStart="10.0dp"
+        app:ripple="true"
+        app:ripple_color="@color/app_ripple"
+        app:card_background_color="?app_blur_card"
+        app:card_blur_enabled="true"
+        app:card_blur_radius="10"
+        app:card_corner_radius="@dimen/card_radius" />
+    <FrameLayout
+        android:id="@id/page_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/statusbar"
+        android:layout_toEndOf="@id/navig_bar">
+        <com.lecoauto.fragment.IndexMusic
+            android:id="@id/index_music"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.lecoauto.fragment.IndexApps
+            android:id="@id/index_apps"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.lecoauto.fragment.IndexHome
+            android:id="@id/index_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

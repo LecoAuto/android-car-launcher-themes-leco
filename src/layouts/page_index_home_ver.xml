@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:id="@id/page_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5.0dp"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lecoauto.widget.lview.WidgetContent
+        android:id="@id/widget_content"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_margin="5.0dp"
+        app:layout_constraintBottom_toTopOf="@id/compo_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="3.0"
+        app:card_background_color="?app_blur_card"
+        app:card_blur_enabled="true"
+        app:card_blur_radius="10"
+        app:card_corner_radius="@dimen/card_radius" />
+    <com.lecoauto.widget2.view.WidgetGroup
+        android:orientation="horizontal"
+        android:id="@id/compo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_margin="5.0dp"
+        app:border_color_normal="?app_blur_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/widget_content"
+        app:layout_constraintVertical_weight="1.2"
+        app:card_background_color="?app_blur_card"
+        app:card_blur_enabled="true"
+        app:card_blur_radius="10"
+        app:card_corner_radius="@dimen/card_radius" />
+    <FrameLayout
+        android:id="@id/size_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20.0dp"
+        app:layout_constraintBottom_toTopOf="@id/compo_bar"
+        app:layout_constraintTop_toBottomOf="@id/widget_content">
+        <com.ruffian.library.widget.RView
+            android:layout_gravity="center"
+            android:layout_width="40.0dp"
+            android:layout_height="3.0dp"
+            app:background_normal="?su_white"
+            app:corner_radius="3.0dp"
+            app:ripple="true"
+            app:ripple_color="#fefefe" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

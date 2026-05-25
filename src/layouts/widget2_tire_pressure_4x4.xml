@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ripple="true"
+    app:ripple_color="@color/app_ripple"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/tp_icon"
+        android:tag="ver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15.0dp"
+        android:importantForAccessibility="no" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:id="@id/tp_left_front"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="?su_white"
+        android:gravity="center"
+        android:id="@id/tp_left_front_unit"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tp_left_front"
+        app:layout_constraintTop_toBottomOf="@id/tp_left_front" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:id="@id/tp_right_front"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="?su_white"
+        android:gravity="center"
+        android:id="@id/tp_right_front_unit"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tp_right_front"
+        app:layout_constraintTop_toBottomOf="@id/tp_right_front" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:id="@id/tp_left_rear"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tp_left_rear_unit"
+        app:layout_constraintStart_toStartOf="@id/tp_left_rear_unit" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="?su_white"
+        android:gravity="center"
+        android:id="@id/tp_left_rear_unit"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:textSize="15.0sp"
+        android:textStyle="bold"
+        android:textColor="?te_white"
+        android:gravity="center"
+        android:id="@id/tp_right_rear"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tp_right_rear_unit"
+        app:layout_constraintEnd_toEndOf="@id/tp_right_rear_unit" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="?su_white"
+        android:gravity="center"
+        android:id="@id/tp_right_rear_unit"
+        android:layout_width="50.0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</com.ruffian.library.widget.RConstraintLayout>

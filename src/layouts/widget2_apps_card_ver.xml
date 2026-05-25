@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.lecoauto.widget.lview.LIndicator
+        android:layout_gravity="start|center"
+        android:id="@id/indicator"
+        android:layout_width="10.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5.0dp"
+        app:circle_circle_radius="3.0dp"
+        app:indicator_orientation="vertical"
+        app:normal_color="#b0bfc5"
+        app:selected_color="@color/app_theme"
+        app:spacing="13.0dp" />
+</merge>

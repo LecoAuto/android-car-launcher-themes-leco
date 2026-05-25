@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30.0dp" />
+    <com.lecoauto.widget.lview.LIndicator
+        android:layout_gravity="center|bottom"
+        android:id="@id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="10.0dp"
+        android:layout_marginBottom="5.0dp"
+        app:circle_rect_corner="3.0dp"
+        app:circle_rect_itemHeight="6.0dp"
+        app:circle_rect_itemWidth="15.0dp"
+        app:circle_rect_radius="3.0dp"
+        app:indicator_orientation="horizontal"
+        app:normal_color="#ffffff"
+        app:selected_color="#ffffff"
+        app:spacing="13.0dp"
+        app:style="circle_rect" />
+    <com.lecoauto.widget.view.Loading
+        android:id="@id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</merge>

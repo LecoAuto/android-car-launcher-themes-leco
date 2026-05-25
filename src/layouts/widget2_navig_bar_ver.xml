@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lecoauto.widget2.view.AppsCard
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:apps_columns="5"
+    app:apps_counts="5"
+    app:apps_icon_size="55.0dp"
+    app:apps_name_size="12.0sp"
+    app:apps_orientation="horizontal"
+    app:apps_rows="1"
+    app:apps_show_name="false"
+    app:apps_tag="navig_bar_ver"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />
