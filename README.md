@@ -1,4 +1,4 @@
-# Leco Car Launcher - Official Theme SDK & Tools 🚗💨
+# LecoAuto Car Launcher - Official Theme SDK & Tools 🚗💨
 
 **Native Android Performance. Picture-in-Picture Power. Full Horizontal & Vertical Support.**
 
